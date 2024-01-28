@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    background : linear-gradient(to bottom right
+    , rgb(114, 21, 142),rgb(158, 65, 158)) ;
+    color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color:rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 400px rgb(227, 227, 227); /* Optional: Add a shadow for depth */
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+
+h2{
+    text-align: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color:#ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+button {
+    background-color: purple;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s
+}
+
+button:hover {
+    opacity: 1
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

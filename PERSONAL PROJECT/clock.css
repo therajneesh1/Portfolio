@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .wrapper {
+    font-family: 'Arial', sans-serif;
+    font-size: 5em;
+    text-align: center;
+    background-color: #48065c;
+    width: 1200px;
+    padding: 40px;
+    border-radius: 10px;
+    border-inline-color: rgb(229, 229, 226);
+    border-width: 2px;
+    box-shadow: 0 0 30px whitesmoke;
+  }
+  
+  
+  
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background : linear-gradient(to bottom right
+    , rgb(114, 21, 142),rgb(158, 65, 158)) ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  
+  /* Add these styles for date */
+  .date {
+    margin-left: 40px;
+    display: flex;
+    margin-top: 5vh;
+    font-size: 5vh;
+  }
+  
+  .date > div {
+    margin: 0 1ch;
+  }
+  
+  /* Style for day, month, and year */
+  .day,
+  .month,
+  .year {
+    width: 5ch;
+    text-align: center;
+    gap: 5px;
+  }
+  
+  /* Additional styling if needed */
+  .date {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: #f4f1f1;
+  }
+  
+  /* Adjust the styles based on your preferences */
+  
+  
+  
+  /* Border styles */
+  .border {
+    width: 100%;
+    border-bottom: 2px solid white; /* Adjust the color and thickness as needed */
+    margin-bottom: 2vh; /* Adjust to match the margin of the date section */
+  }
+  
+  
+  .clock {
+    margin-left: 80px;
+    height: 20vh;
+    color: rgb(245, 239, 239);
+    font-size: 22vh;
+    font-family: sans-serif;
+    line-height: 20.4vh;
+    display: flex;
+    position: relative;
+    /*background: green;*/
+    overflow: hidden;
+  }
+  
+  
+  /* AM/PM styles */
+  .ampm {
+    font-size: 15vh;
+  }
+  
+  .indicator {
+    color: yellow; /* Adjust the color as needed */
+    text-shadow: 0 0 50px rgb(248, 250, 250);
+  }
+  
+  
+  
+  
+  .clock::before, .clock::after {
+    content: '';
+    width: 7ch;
+    height: 3vh;
+    background: linear-gradient(to top, transparent, rgb(404, 75, 20));
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .clock::after {
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, rgb(26, 201, 8));
+  }
+  
+  .clock > div {
+    display: flex;
+  }
+  
+  .tick {
+    line-height: 17vh;
+  }
+  
+  .tick-hidden {
+    opacity: 0;
+  }
+  
+  .move {
+    animation: move linear 1s infinite;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
