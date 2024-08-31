@@ -430,6 +430,10 @@ header .navbar ul li a:hover {
 }
 
 
+
+
+
+
 .skills {
   min-height: 100vh;
   background: linear-gradient(to bottom, #57059e, #4a00e0, rgb(87, 179, 148) );
@@ -451,7 +455,7 @@ header .navbar ul li a:hover {
 }
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   flex-wrap: wrap;
   gap: 1.8rem;
 }
@@ -489,6 +493,211 @@ header .navbar ul li a:hover {
 }
 
 
+@media screen and (max-width: 600px) {
+  .skills .container {
+    padding: 0;
+    margin: 0;
+  }
+  .skills .container .row {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+    padding: 2rem 0.2rem 2rem 0.2rem;
+    gap: 1rem;
+  }
+
+
+
+  .skills .container {
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.certificates {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #57059e, #4a00e0, rgb(87, 179, 148) );
+}
+.certificates h2 {
+  color: #fff;
+}
+.certificates .heading span {
+  color: rgb(255, 230, 0);
+}
+.certificates .container {
+  background: rgba(0, 0, 22, 0.4);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.certificates .container .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex-wrap: wrap;
+  gap: 1.8rem;
+}
+.certificates .container .bar {
+  text-align: center;  
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 22, 0.9);
+  transition: 0.2s;
+}
+.certificates .container .bar:hover {
+  box-shadow: 0 8px 10px white !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+.certificates .container .bar .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.certificates .container .bar .info img {
+  font-size: 4rem;
+  height: 110px;
+  width: 120px;
+}
+.certificates .container .bar .info span {
+    text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins";
+  margin-left: 0.5rem;
+}
+
+
+@media screen and (max-width: 600px) {
+  .certificates .container {
+    padding: 0;
+    margin: 0;
+  }
+  .certificates .container .row {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+    padding: 2rem 0.2rem 2rem 0.2rem;
+    gap: 1rem;
+  }
+
+
+
+  .certificates .container {
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.coding {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #57059e, #4a00e0, rgb(87, 179, 148) );  
+}
+.coding h2 {
+  color: #fff;
+}
+.coding .heading span {
+  color: rgb(255, 230, 0);
+}
+.coding .container {
+  background: rgba(0, 0, 22, 0.4);
+  color: #fff;
+  border-radius: 1rem;
+  width: 100%;
+  margin: 8rem;
+  left: 20px;
+}
+.coding .container .row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.coding .container .bar {
+  align-items: center;
+  text-align: center;  
+  margin: 20px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 22, 0.9);
+  transition: 0.2s;
+}
+.coding .container .bar:hover {
+  box-shadow: 0 8px 10px white !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+.coding .container .bar .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.coding .container .bar .info img {
+  font-size: 4rem;
+  height: 220px;
+  width: 240px;
+}
+.coding .container .bar .info span {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins";
+  margin-left: 0.5rem;
+}
+
+
+@media screen and (max-width: 600px) {
+  .coding .container {
+    padding: 0;
+    margin: 0;
+  }
+  /* .coding .container .row {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+    padding: 2rem 0.2rem 2rem 0.2rem;
+    gap: 1rem;
+  }
+
+
+
+  .coding .container {
+    margin-top: 5px;
+    width: 100%;
+  } */
+}
+
+
+
+
+
+
+
 
 
 
@@ -518,7 +727,7 @@ header .navbar ul li a:hover {
 .projects .container .row {
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   flex-wrap: wrap;
   gap: 1.8rem;
 }
@@ -695,18 +904,26 @@ header .navbar ul li a:hover {
   }
 }
 
-.work {
+
+
+
+
+
+
+
+
+.experience {
    background: #010124; 
   background: linear-gradient(to bottom, #000031, #20c874);
 }
-.work h2 {
+.experience h2 {
   color: #fff;
   padding: 1rem;
 }
-.work .heading span {
+.experience .heading span {
   color: rgb(255, 230, 0);
 }
-.work .box-container {
+.experience .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 15rem;
@@ -714,7 +931,7 @@ header .navbar ul li a:hover {
   height: 20%;
   width: 50%;
 }
-.work .box-container .box {
+.experience .box-container .box {
   flex: 1 1 30rem;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -723,12 +940,12 @@ header .navbar ul li a:hover {
   height: 40rem;
   width: 40rem;
 }
-.work .box-container .box img {
+.experience .box-container .box img {
   height: 50%;
   width:100% ;
   
 }
-.work .box-container .box .content {
+.experience .box-container .box .content {
   height: 100%;
   width: 200%;
   position: absolute;
@@ -738,7 +955,7 @@ header .navbar ul li a:hover {
   display: flex;
   flex-direction: column;
 }
-.work .box-container .box .content .tag {
+.experience .box-container .box .content .tag {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -748,28 +965,28 @@ header .navbar ul li a:hover {
   padding-left: 1rem;
   background: #ffd900;
 }
-.work .box-container .box .content .tag h3 {
+.experience .box-container .box .content .tag h3 {
   font-size: 1rem;
 }
-.work .box-container .box:hover .content {
+.experience .box-container .box:hover .content {
   top: 25%;
 }
-.work .desc {
+.experience .desc {
   margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.work .desc p {
+.experience .desc p {
   font-size: 1rem;
 }
-.work .desc .btns {
+.experience .desc .btns {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 2rem;
 }
-.worl .desc .btns .btn {
+.experience .desc .btns .btn {
   line-height: 0;
   display: inline;
   padding: 1.5rem 2.5rem;
@@ -779,14 +996,14 @@ header .navbar ul li a:hover {
   background: rgb(12, 12, 12);
   margin-right: 2rem;
 }
-.work .desc .btns .btn:hover {
+.experience .desc .btns .btn:hover {
   background: #310ae0f5;
 }
-.work .viewall {
+.experience .viewall {
   display: flex;
   justify-content: center;
 }
-.work .viewall .btn {
+.experience .viewall .btn {
   position: relative;
   line-height: 0;
   padding: 1.6rem 3rem;
@@ -798,21 +1015,21 @@ header .navbar ul li a:hover {
   box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
   text-align: center;
 }
-.work .viewall .btn span {
+.experience .viewall .btn span {
   font-weight: 600;
   font-size: 1.7rem;
   font-family: "Nunito", sans-serif;
 }
-.work .viewall .btn i {
+.experience .viewall .btn i {
   margin-left: 0.3rem;
   font-size: 1.5rem;
   transition: 0.3s;
 }
-.work .viewall .btn:hover {
+.experience .viewall .btn:hover {
   background: #fff;
   color: #000;
 }
-.work .viewall .btn:hover i {
+.experience .viewall .btn:hover i {
   transform: translateX(5px);
 }
 
@@ -820,12 +1037,23 @@ header .navbar ul li a:hover {
 
 
 
-.experience .timeline {
+
+
+
+
+
+
+
+
+
+
+
+.expertise .timeline {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
 }
-.experience .timeline::after {
+.expertise .timeline::after {
   content: "";
   position: absolute;
   width: 6px;
@@ -836,14 +1064,14 @@ header .navbar ul li a:hover {
   margin-left: -3px;
   z-index: -2;
 }
-.experience .container {
+.expertise .container {
   padding: 20px 38px;
   position: relative;
   background-color: inherit;
   width: 50%;
 }
 
-.experience .container::after {
+.expertise .container::after {
   content: "\f0b1";
   position: absolute;
   width: 25px;
@@ -860,14 +1088,14 @@ header .navbar ul li a:hover {
   color: #02094b;
   font-family: "Font Awesome\ 5 Free";
 }
-.experience .left {
+.expertise .left {
   left: 0;
 }
-.experience .right {
+.expertise .right {
   left: 50%;
 }
 
-.experience .left::before {
+.expertise .left::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -880,7 +1108,7 @@ header .navbar ul li a:hover {
   border-color: transparent transparent transparent #f68c09;
 }
 
-.experience .right::before {
+.expertise .right::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -892,28 +1120,28 @@ header .navbar ul li a:hover {
   border-width: 10px 10px 10px 0;
   border-color: transparent #f68c09 transparent transparent;
 }
-.experience .right::after {
+.expertise .right::after {
   left: -16px;
 }
-.experience .content {
+.expertise .content {
   background-color: #ff7b00;
   position: relative;
   border-radius: 6px;
 }
-.experience .content .tag {
+.expertise .content .tag {
   font-size: 1.3rem;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
 }
-.experience .content .desc {
+.expertise .content .desc {
   margin-left: 1.5rem;
   padding-bottom: 1rem;
 }
-.experience .content .desc h3 {
+.expertise .content .desc h3 {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.experience .content .desc p {
+.expertise .content .desc p {
   font-size: 1.2rem;
 }
 
@@ -951,36 +1179,36 @@ header .navbar ul li a:hover {
 
 
 @media screen and (max-width: 600px) {
-  .experience {
+  .expertise {
     min-height: 80vh;
   }
-  .experience .timeline {
+  .expertise .timeline {
     margin-top: 2rem;
   }
-  .experience .timeline::after {
+  .expertise .timeline::after {
     left: 31px;
   }
-  .experience .container {
+  .expertise .container {
     width: 100%;
     padding-left: 8rem;
     padding-right: 2rem;
   }
-  .experience .container::after {
+  .expertise .container::after {
     font-size: 2.2rem;
   }
-  .experience .container::before {
+  .expertise .container::before {
     left: 61px;
     border: medium solid #f68c09;
     border-width: 10px 10px 10px 0;
     border-color: transparent #f68c09 transparent transparent;
   }
-  .experience .left::after {
+  .expertise .left::after {
     left: 15px;
   }
-  .experience .right::after {
+  .expertise .right::after {
     left: 15px;
   }
-  .experience .right {
+  .expertise .right {
     left: 0%;
   }
   .morebtn {
@@ -1066,7 +1294,7 @@ header .navbar ul li a:hover {
 .footer .fa {
   color: #e90606;
   margin: 0 0.3rem;
-  font-size: 1.5rem;
+  font-size: 3rem;
   animation: pound 0.35s infinite alternate;
 }
 @-webkit-keyframes pound {
