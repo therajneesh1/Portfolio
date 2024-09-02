@@ -1,0 +1,138 @@
+<html>
+<head>
+  <style>
+
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        background : linear-gradient(to bottom right
+        , rgb(114, 21, 142),rgb(158, 65, 158)) ;
+        color: white;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        font-size: 20px;
+      }
+
+
+    #container {
+        text-align: center;
+        height: 50%;
+        width: 30%;
+        background: #312724;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 400px rgb(227, 227, 227); /* Optional: Add a shadow for depth */
+      }
+  
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+  
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+  
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+
+  </style>
+</head>
+<body oncontextmenu="return false">
+
+    <div id="container">
+        <h1>Weight Converter</h1>
+        <br><br>
+        <input id="input" type="number" value="Enter unit" placeholder="Enter value" min="0">
+        <select id="inputUnit">
+            <option value="mg">Milligram</option>
+            <option value="g">Gram</option>
+            <option value="cg">Centigram</option>
+            <option value="dg">Decigram</option>
+            <option value="dag">Dekagram</option>
+            <option value="hg">Hectogram</option>
+            <option value="kg" selected>Kilogram</option>
+            <option value="t">Ton</option>
+            <option value="mt">Metric ton</option>
+            <option value="lb">Pound</option>
+        </select>
+
+
+        <select id="outputUnit">
+            <option value="mg">Milligram</option>
+            <option value="g">Gram</option>
+            <option value="cg">Centigram</option>
+            <option value="dg">Decigram</option>
+            <option value="dag">Dekagram</option>
+            <option value="hg">Hectogram</option>
+            <option value="kg">Kilogram</option>
+            <option value="t">Ton</option>
+            <option value="mt">Metric ton</option>
+           <option value="lb" selected>Pound</option>
+        </select>
+        <hr><br>
+        <span>Result : </span>
+        <span id="result"></span>
+    </div>
+  <script>
+    // Define the conversion factors for each unit
+    const factors = {
+      mg: 1e-6,
+      g: 1e-3,
+      cg: 1e-5,
+      dg: 1e-4,
+      dag: 1e-2,
+      hg: 1e-1,
+      kg: 1,
+      t: 1e3,
+      mt: 1e6,
+      lb: 0.453592
+    };
+
+    // Get the elements from the document
+    const input = document.getElementById("input");
+    const inputUnit = document.getElementById("inputUnit");
+    const outputUnit = document.getElementById("outputUnit");
+    const result = document.getElementById("result");
+
+    // Define a function to convert the input value to the output unit
+    function convert() {
+      // Get the input value and units
+      let inputValue = parseFloat(input.value);
+      let inputFactor = factors[inputUnit.value];
+      let outputFactor = factors[outputUnit.value];
+
+      // Calculate the output value
+      let outputValue = inputValue * inputFactor / outputFactor;
+
+      // Display the output value
+      result.textContent = outputValue.toFixed(5);
+    }
+
+    // Add event listeners to the elements to trigger the conversion
+    input.addEventListener("input", convert);
+    inputUnit.addEventListener("change", convert);
+    outputUnit.addEventListener("change", convert);
+
+    // Call the conversion function initially
+    convert();
+  </script>
+</body>
+</html>
