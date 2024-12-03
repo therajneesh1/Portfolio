@@ -26,6 +26,7 @@ Welcome to my personal portfolio project! This portfolio reflects my **skills**,
 6. **Certificates**: A collection of certifications I've earned during my learning journey.
 7. **Coding Profiles**: Links to platforms like LeetCode, HackerRank, and others.
 8. **Work Experience**: Highlights of my professional experiences and internships.
+9.  **Work Expertise**: A deeper look into specific areas of professional expertise.
 
 ---
 
